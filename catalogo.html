@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="img/lo1.png">
+
+  <title>Mundo Pintura | Catálogo</title>
+
+  <!-- Bootstrap 5 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Iconos Bootstrap -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  >
+
+
+<!-- Tipografía externa Google Fonts: Poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos propios -->
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+ 
+  <header class="catalogo-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-contacto">
+    <div class="container">
+
+      <a class="navbar-brand d-flex align-items-center gap-2"
+         href="index.html">
+        <img src="img/lo1.png" alt="Logo Mundo Pintura">
+        <span>Mundo Pintura</span>
+      </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuCatalogo"
+          aria-controls="menuCatalogo"
+          aria-expanded="false"
+          aria-label="Abrir menú"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuCatalogo">
+          <ul class="navbar-nav mx-auto align-items-lg-center">
+<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+<li class="nav-item"><a class="nav-link" href="sucursale.html">Sucursales</a></li>
+<li class="nav-item"><a class="nav-link active" href="catalogo.html">Catálogo</a></li>
+<li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
+<li class="nav-item"><a class="nav-link" href="contactanos.html">Contáctanos</a></li>
+</ul>
+
+          <a href="contactanos.html" class="btn btn-bordo">
+            Consultanos
+          </a>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- BANNER PRINCIPAL -->
+    <section class="catalogo-hero">
+      <div class="catalogo-hero-fondo"></div>
+
+      <div class="container catalogo-hero-contenido">
+        <span class="catalogo-etiqueta">
+          TODO PARA TUS PROYECTOS
+        </span>
+
+        <h1>
+          Encontrá todo para<br>
+          darle vida a tus ideas
+        </h1>
+
+        <p>
+          Pinturas, esmaltes, selladores y herramientas
+          para renovar tus espacios.
+        </p>
+
+        <a href="#productos" class="btn btn-naranja">
+          Explorar productos
+        </a>
+      </div>
+    </section>
+
+
+    
+    <section class="catalogo-presentacion">
+      <div class="container text-center">
+        <span class="subtitulo-seccion">NUESTROS PRODUCTOS</span>
+
+        <h2>Calidad para cada proyecto</h2>
+
+        <p>
+          Descubrí opciones para interiores, exteriores,
+          madera y mucho más. Elegí lo que necesitás
+          y consultanos por disponibilidad y precios.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- CATÁLOGO -->
+    <section class="catalogo-productos" id="productos">
+      <div class="container">
+
+        <div class="catalogo-titulo">
+          <div>
+            <span class="subtitulo-seccion">MUNDO PINTURA</span>
+            <h2>Explorá el catálogo</h2>
+          </div>
+
+          <span class="cantidad-resultados" id="cantidadProductos">
+            8 productos
+          </span>
+        </div>
+
+
+        <!-- BUSCADOR -->
+        <div class="catalogo-buscador">
+          <span class="simbolo-busqueda" aria-hidden="true">⌕</span>
+
+          <input
+            type="search"
+            id="buscarProducto"
+            class="form-control"
+            placeholder="Buscar pintura, esmalte, rodillo..."
+            aria-label="Buscar productos"
+          >
+        </div>
+
+
+        <!-- FILTROS -->
+        <div class="catalogo-filtros" aria-label="Filtrar productos">
+
+          <button
+            class="filtro-btn activo"
+            type="button"
+            data-filtro="todos"
+            aria-pressed="true"
+          >
+            Todos
+          </button>
+
+          <button
+            class="filtro-btn"
+            type="button"
+            data-filtro="latex"
+            aria-pressed="false"
+          >
+            Látex
+          </button>
+
+          <button
+            class="filtro-btn"
+            type="button"
+            data-filtro="madera"
+            aria-pressed="false"
+          >
+            Madera y esmaltes
+          </button>
+
+          <button
+            class="filtro-btn"
+            type="button"
+            data-filtro="preparacion"
+            aria-pressed="false"
+          >
+            Preparación
+          </button>
+
+          <button
+            class="filtro-btn"
+            type="button"
+            data-filtro="herramientas"
+            aria-pressed="false"
+          >
+            Herramientas
+          </button>
+
+        </div>
+
+
+
+
+
+        <!-- TARJETAS DE PRODUCTOS -->
+        <div class="row g-4" id="listaProductos">
+
+
+          <!-- OFERTA 1 -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 producto-item"
+            data-categoria="preparacion"
+            data-nombre="recupplast atérmico oferta"
+            data-precio="29392.90"
+          >
+            <article class="producto-tarjeta">
+
+              <div class="producto-imagen">
+                <span class="producto-etiqueta">10% OFF</span>
+
+                <img
+                  src="img/pintura1.jpeg"
+                  alt="Recupplast atérmico"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="producto-info">
+                <span class="producto-categoria">Oferta</span>
+                <h3>Recupplast atérmico</h3>
+
+                <p class="precio-anterior">$32.658,78</p>
+                <p class="precio-oferta">$29.392,90</p>
+
+                <div class="selector-cantidad">
+                  <button
+                    type="button"
+                    class="cantidad-btn"
+                    data-cambio="-1"
+                    aria-label="Restar una unidad"
+                  >−</button>
+
+                  <span class="cantidad-valor" aria-live="polite">1</span>
+
+                  <button
+                    type="button"
+                    class="cantidad-btn"
+                    data-cambio="1"
+                    aria-label="Agregar una unidad"
+                  >+</button>
+                </div>
+
+                <button type="button" class="producto-boton" data-agregar>
+                  Agregar al carrito
+                </button>
+              </div>
+
+            </article>
+          </div>
+
+
+          <!-- OFERTA 2 -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 producto-item"
+            data-categoria="latex"
+            data-nombre="recupplast interior mate oferta"
+            data-precio="17193.60"
+          >
+            <article class="producto-tarjeta">
+
+              <div class="producto-imagen">
+                <span class="producto-etiqueta">10% OFF</span>
+
+                <img
+                  src="img/pintura2.jpeg"
+                  alt="Recupplast interior mate"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="producto-info">
+                <span class="producto-categoria">Oferta</span>
+                <h3>Recupplast interior mate</h3>
+
+                <p class="precio-anterior">$19.104,00</p>
+                <p class="precio-oferta">$17.193,60</p>
+
+                <div class="selector-cantidad">
+                  <button type="button" class="cantidad-btn"
+                          data-cambio="-1" aria-label="Restar una unidad">−</button>
+                  <span class="cantidad-valor" aria-live="polite">1</span>
+                  <button type="button" class="cantidad-btn"
+                          data-cambio="1" aria-label="Agregar una unidad">+</button>
+                </div>
+
+                <button type="button" class="producto-boton" data-agregar>
+                  Agregar al carrito
+                </button>
+              </div>
+
+            </article>
+          </div>
+
+
+          <!-- OFERTA 3 -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 producto-item"
+            data-categoria="preparacion"
+            data-nombre="sellador sintoplast oferta"
+            data-precio="9411.50"
+          >
+            <article class="producto-tarjeta">
+
+              <div class="producto-imagen">
+                <span class="producto-etiqueta">10% OFF</span>
+
+                <img
+                  src="img/pintura3.jpeg"
+                  alt="Sellador Sintoplast"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="producto-info">
+                <span class="producto-categoria">Oferta</span>
+                <h3>Sellador Sintoplast</h3>
+
+                <p class="precio-anterior">$10.457,22</p>
+                <p class="precio-oferta">$9.411,50</p>
+
+                <div class="selector-cantidad">
+                  <button type="button" class="cantidad-btn"
+                          data-cambio="-1" aria-label="Restar una unidad">−</button>
+                  <span class="cantidad-valor" aria-live="polite">1</span>
+                  <button type="button" class="cantidad-btn"
+                          data-cambio="1" aria-label="Agregar una unidad">+</button>
+                </div>
+
+                <button type="button" class="producto-boton" data-agregar>
+                  Agregar al carrito
+                </button>
+              </div>
+
+            </article>
+          </div>
+
+
+          <!-- PRODUCTO 4 -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 producto-item"
+            data-categoria="herramientas"
+            data-nombre="rodillo para pintar herramienta"
+            data-precio=""
+          >
+            <article class="producto-tarjeta">
+
+              <div class="producto-imagen">
+                <img src="img/pintura8.jpeg"
+                     alt="Rodillo para pintar" loading="lazy">
+              </div>
+
+              <div class="producto-info">
+                <span class="producto-categoria">Herramientas</span>
+                <h3>Rodillo para pintar</h3>
+               
+               <br> <p class="precio-oferta">$9.411,50</p><br>
+
+                <div class="selector-cantidad">
+                  <button type="button" class="cantidad-btn"
+                          data-cambio="-1" aria-label="Restar una unidad">−</button>
+                  <span class="cantidad-valor" aria-live="polite">1</span>
+                  <button type="button" class="cantidad-btn"
+                          data-cambio="1" aria-label="Agregar una unidad">+</button>
+                </div>
+
+                <button type="button" class="producto-boton" data-agregar>
+                  Agregar al carrito
+                </button>
+              </div>
+
+            </article>
+          </div>
+
+
+          <!-- PRODUCTO 5 -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 producto-item"
+            data-categoria="herramientas"
+            data-nombre="set pinceles brochas herramientas"
+            data-precio=""
+          >
+            <article class="producto-tarjeta">
+
+              <div class="producto-imagen">
+                <img src="img/pintura9.jpeg"
+                     alt="Set de pinceles" loading="lazy">
+              </div>
+
+              <div class="producto-info">
+                <span class="producto-categoria">Herramientas</span>
+                <h3>Set de pinceles</h3>
+               
+                 <br> <p class="precio-oferta">$9.411,50</p><br>
+
+
+                <div class="selector-cantidad">
+                  <button type="button" class="cantidad-btn"
+                          data-cambio="-1" aria-label="Restar una unidad">−</button>
+                  <span class="cantidad-valor" aria-live="polite">1</span>
+                  <button type="button" class="cantidad-btn"
+                          data-cambio="1" aria-label="Agregar una unidad">+</button>
+                </div>
+
+                <button type="button" class="producto-boton" data-agregar>
+                  Agregar al carrito
+                </button>
+              </div>
+
+            </article>
+          </div>
+
+
+          <!-- PRODUCTO 6 -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 producto-item"
+            data-categoria="madera"
+            data-nombre="esmalte sintético madera metal"
+            data-precio=""
+          >
+            <article class="producto-tarjeta">
+
+              <div class="producto-imagen">
+                <img src="img/pintura10.webp"
+                     alt="Esmalte sintético" loading="lazy">
+              </div>
+
+              <div class="producto-info">
+                <span class="producto-categoria">Esmaltes</span>
+                <h3>Esmalte sintético</h3>
+               
+                <br> <p class="precio-oferta">$9.411,50</p><br>
+
+
+                <div class="selector-cantidad">
+                  <button type="button" class="cantidad-btn"
+                          data-cambio="-1" aria-label="Restar una unidad">−</button>
+                  <span class="cantidad-valor" aria-live="polite">1</span>
+                  <button type="button" class="cantidad-btn"
+                          data-cambio="1" aria-label="Agregar una unidad">+</button>
+                </div>
+
+                <button type="button" class="producto-boton" data-agregar>
+                  Agregar al carrito
+                </button>
+              </div>
+
+            </article>
+          </div>
+
+
+          <!-- PRODUCTO 7 -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 producto-item"
+            data-categoria="herramientas"
+            data-nombre="herramientas para pintar"
+            data-precio=""
+          >
+            <article class="producto-tarjeta">
+
+              <div class="producto-imagen">
+                <img src="img/pintura11.png"
+                     alt="Herramientas para pintar" loading="lazy">
+              </div>
+
+              <div class="producto-info">
+                <span class="producto-categoria">Herramientas</span>
+                <h3>Herramientas para pintar</h3>
+               
+ <br> <p class="precio-oferta">$9.411,50</p><br>
+
+                <div class="selector-cantidad">
+                  <button type="button" class="cantidad-btn"
+                          data-cambio="-1" aria-label="Restar una unidad">−</button>
+                  <span class="cantidad-valor" aria-live="polite">1</span>
+                  <button type="button" class="cantidad-btn"
+                          data-cambio="1" aria-label="Agregar una unidad">+</button>
+                </div>
+
+                <button type="button" class="producto-boton" data-agregar>
+                  Agregar al carrito
+                </button>
+              </div>
+
+            </article>
+          </div>
+
+
+          <!-- PRODUCTO 8 -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 producto-item"
+            data-categoria="madera"
+            data-nombre="troya impregnantes barnices lacas madera"
+            data-precio=""
+          >
+            <article class="producto-tarjeta">
+
+              <div class="producto-imagen">
+                <img src="img/pintura1.jpeg"
+                     alt="Producto Troya para madera" loading="lazy">
+              </div>
+
+              <div class="producto-info">
+                <span class="producto-categoria">Madera</span>
+                <h3>Línea Troya</h3>
+ <br> <p class="precio-oferta">$9.411,50</p><br>
+
+
+                <div class="selector-cantidad">
+                  <button type="button" class="cantidad-btn"
+                          data-cambio="-1" aria-label="Restar una unidad">−</button>
+                  <span class="cantidad-valor" aria-live="polite">1</span>
+                  <button type="button" class="cantidad-btn"
+                          data-cambio="1" aria-label="Agregar una unidad">+</button>
+                </div>
+
+                <button type="button" class="producto-boton" data-agregar>
+                  Agregar al carrito
+                </button>
+              </div>
+
+            </article>
+          </div>
+
+        </div>
+
+
+       
+        <p id="sinResultados" class="sin-resultados" hidden>
+          No encontramos productos con esa búsqueda.
+          Probá con otro nombre o categoría.
+        </p>
+
+      </div>
+    </section>
+
+
+    
+    <section class="catalogo-cta">
+      <div class="container catalogo-cta-contenido">
+        <div>
+          <span>¿TENÉS UN PROYECTO EN MENTE?</span>
+          <h2>Te ayudamos a encontrar lo que necesitás.</h2>
+          <p>
+            Contáctanos para consultar precios, disponibilidad
+            y asesoramiento sobre nuestros productos.
+          </p>
+        </div>
+
+        <a href="contactanos.html" class="btn btn-claro">
+          Contáctanos
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+ 
+  <button
+    type="button"
+    class="carrito-flotante"
+    id="abrirCarrito"
+    aria-label="Abrir carrito de compras"
+    aria-expanded="false"
+  >
+   <i class="bi bi-cart3"></i>
+    <span class="carrito-contador" id="cartCount">0</span>
+  </button>
+
+
+ 
+     <!-- PANEL DEL CARRITO -->
+<section
+  class="carrito-panel"
+  id="panelCarrito"
+  aria-label="Carrito de compras"
+  aria-hidden="true"
+  hidden
+>
+  <div class="carrito-panel-encabezado">
+    <h2>Mi carrito</h2>
+    <button type="button" id="cerrarCarrito" aria-label="Cerrar carrito">
+      ×
+    </button>
+  </div>
+
+  <div id="listaCarrito" class="lista-carrito">
+    <p>Tu carrito está vacío.</p>
+  </div>
+
+  <div class="carrito-resumen">
+    <p id="totalCarrito">Total con precio conocido: $0,00</p>
+    <p class="nota-carrito">
+      Los productos sin precio confirmado requieren consulta.
+    </p>
+
+    <button type="button" id="vaciarCarrito" class="btn-vaciar-carrito">
+      Vaciar carrito
+    </button>
+
+    <button
+      type="button"
+      id="finalizarCompra"
+      class="producto-boton"
+    >
+      Finalizar pedido
+    </button>
+  </div>
+
+
+  </section>
+
+
+    <!--FINALIZAR EL PEDIDO -->
+<div
+  class="modal fade"
+  id="modalPedido"
+  tabindex="-1"
+  aria-labelledby="tituloModalPedido"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="tituloModalPedido">
+          Datos de tu pedido
+        </h2>
+
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Cerrar"
+        ></button>
+      </div>
+
+      <div class="modal-body">
+
+
+
+      <form id="formularioPedido">
+  <div class="mb-3">
+    <label for="clienteNombre" class="form-label">
+      Nombre y apellido
+    </label>
+    <input
+      type="text"
+      id="clienteNombre"
+      class="form-control"
+      autocomplete="name"
+      required
+    >
+  </div>
+
+  <div class="mb-3">
+    <label for="clienteTelefono" class="form-label">
+      Teléfono de contacto
+    </label>
+    <input
+      type="tel"
+      id="clienteTelefono"
+      class="form-control"
+      autocomplete="tel"
+      required
+    >
+  </div>
+
+  <div class="mb-3">
+    <label for="formaPago" class="form-label">
+      Forma de pago
+    </label>
+    <select id="formaPago" class="form-select" required>
+      <option value="">Seleccioná una opción</option>
+      <option value="Efectivo">Efectivo</option>
+      <option value="Transferencia">Transferencia</option>
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <label for="tipoEntrega" class="form-label">
+      ¿Cómo querés recibir tu pedido?
+    </label>
+    <select id="tipoEntrega" class="form-select" required>
+      <option value="">Seleccioná una opción</option>
+      <option value="Retiro por sucursal">Retirar por una sucursal</option>
+      <option value="Envío a domicilio">Envío a domicilio</option>
+    </select>
+  </div>
+
+  <div id="datosRetiro" hidden>
+    <p>Podés retirar tu pedido por cualquiera de nuestras sucursales.</p>
+
+    <div class="mb-3">
+      <label for="sucursalRetiro" class="form-label">
+        Sucursal elegida (opcional)
+      </label>
+      <input
+        type="text"
+        id="sucursalRetiro"
+        class="form-control"
+        placeholder="Nombre o ubicación de la sucursal"
+      >
+    </div>
+  </div>
+
+  <div id="datosEnvio" hidden>
+    <div class="mb-3">
+      <label for="direccionEntrega" class="form-label">
+        Dirección de entrega
+      </label>
+      <input
+        type="text"
+        id="direccionEntrega"
+        class="form-control"
+        autocomplete="street-address"
+      >
+    </div>
+
+    <div class="mb-3">
+      <label for="localidadEntrega" class="form-label">
+        Localidad
+      </label>
+      <input
+        type="text"
+        id="localidadEntrega"
+        class="form-control"
+      >
+    </div>
+
+    <div class="mb-3">
+      <label for="referenciasEntrega" class="form-label">
+        Referencias (opcional)
+      </label>
+      <textarea
+        id="referenciasEntrega"
+        class="form-control"
+        rows="2"
+        placeholder="Piso, departamento, entre calles..."
+      ></textarea>
+    </div>
+  </div>
+
+  <div class="d-grid gap-2 mt-4">
+    <button type="submit" class="producto-boton">
+      Continuar por WhatsApp
+    </button>
+
+    <button
+      type="button"
+      id="volverCarrito"
+      class="btn-vaciar-carrito"
+      data-bs-dismiss="modal"
+    >
+      Volver al carrito
+    </button>
+  </div>
+</form>
+
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+ <!-- PIE DE PÁGINA -->
+  <footer class="catalogo-footer">
+    <div class="container">
+      <div class="row align-items-center gy-2">
+
+        <div class="col-md-4 text-center text-md-start">
+          <a href="index.html">
+            <img src="img/lo1.png"
+                 alt="Mundo Pintura"
+                 class="footer-logo">
+          </a>
+
+          
+        </div>
+
+        <div class="col-md-4 text-center">
+          
+          <a href="index.html">Inicio</a>
+          <a href="sucursale.html">Sucursales</a>
+          <a href="clientes.html">Clientes</a>
+          <a href="contactanos.html">Contacto</a>
+        </div>
+
+        <div class="col-md-3 text-center text-md-end">
+         
+          <div class="footer-redes">
+            <a href="https://wa.me/5492646607905"
+               target="_blank" rel="noopener" aria-label="WhatsApp">
+             <i class="bi bi-whatsapp"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+             <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+
+          <a href="index.html" class="volver-inicio">
+            <i class="bi bi-house-door-fill" aria-hidden="true"></i>
+
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-final">
+        <p>© Mundo Pintura. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP -->
+  <a
+    class="whatsapp-catalogo"
+    href="https://wa.me/5492646607905"
+    target="_blank"
+    rel="noopener"
+    aria-label="Consultar por WhatsApp"
+  >
+   <i class="bi bi-whatsapp"></i>
+  </a>
+
+
+<!-- MODAL PRODUCTO AGREGADO -->
+<div class="modal fade" id="modalProductoAgregado" tabindex="-1"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modal-mundo-pintura">
+
+      <div class="modal-header">
+        <h5 class="modal-title">¡Producto agregado!</h5>
+        <button type="button" class="btn-close btn-close-white"
+                data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <i class="bi bi-cart-check-fill icono-modal"></i>
+        <h4>¡Genial!</h4>
+        <p id="mensajeProductoAgregado">
+          El producto se agregó correctamente a tu carrito.
+        </p>
+      </div>
+
+      <div class="modal-footer justify-content-center">
+        <button class="btn btn-modal-claro" data-bs-dismiss="modal">
+          Seguir comprando
+        </button>
+        <button class="btn btn-modal-naranja" id="btnVerCarritoModal"
+                data-bs-dismiss="modal">
+          Ver carrito
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  <!-- BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+
+  <!-- BUSCADOR, FILTROS Y CARRITO -->
+  <script>
+    // BUSCADOR Y FILTROS
+    const buscador = document.getElementById("buscarProducto");
+    const filtros = document.querySelectorAll(".filtro-btn");
+    const productos = document.querySelectorAll(".producto-item");
+    const cantidadResultados = document.getElementById("cantidadProductos");
+    const mensajeVacio = document.getElementById("sinResultados");
+
+    let categoriaActual = "todos";
+    // Recuperar la búsqueda enviada desde otra página
+    const parametrosURL = new URLSearchParams(window.location.search);
+    const busquedaInicial = parametrosURL.get("buscar");
+
+    if (buscador && busquedaInicial) {
+      buscador.value = busquedaInicial;
+    }
+
+    function normalizar(texto) {
+      return texto
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+    }
+
+    function filtrarProductos(){
+    const texto = normalizar((buscador?.value || "").trim());
+      let visibles = 0;
+
+      productos.forEach(function(producto) {
+        const nombre = normalizar(
+          (producto.dataset.nombre || "") + " " +
+          producto.textContent
+        );
+
+        const categoria = producto.dataset.categoria;
+        const coincideTexto = nombre.includes(texto);
+        const coincideCategoria =
+          categoriaActual === "todos" ||
+          categoria === categoriaActual;
+
+        const mostrar = coincideTexto && coincideCategoria;
+
+        producto.hidden = !mostrar;
+
+        if (mostrar) visibles++;
+      });
+
+      if (cantidadResultados) {
+  cantidadResultados.textContent =
+    visibles + (visibles === 1 ? " producto" : " productos");
+}
+
+if (mensajeVacio) {
+  mensajeVacio.hidden = visibles !== 0;
+}
+    }
+
+    buscador?.addEventListener("input", filtrarProductos);
+
+    filtros.forEach(function(boton) {
+      boton.addEventListener("click", function() {
+        categoriaActual = boton.dataset.filtro;
+
+        filtros.forEach(function(otro) {
+          const activo = otro === boton;
+          otro.classList.toggle("activo", activo);
+          otro.setAttribute("aria-pressed", String(activo));
+        });
+
+        filtrarProductos();
+      });
+    });
+ 
+    filtrarProductos();
+
+    // CANTIDADES
+    document.querySelectorAll(".producto-item").forEach(function(tarjeta) {
+      const valor = tarjeta.querySelector(".cantidad-valor");
+
+      tarjeta.querySelectorAll("[data-cambio]").forEach(function(boton) {
+        boton.addEventListener("click", function() {
+          let cantidad = Number(valor.textContent);
+          cantidad += Number(boton.dataset.cambio);
+
+          valor.textContent = Math.max(1, cantidad);
+        });
+      });
+    });
+
+
+// ======================================
+// CARRITO Y MODAL PRODUCTO AGREGADO
+// ======================================
+
+let carrito = [];
+
+const contadorCarrito = document.getElementById("cartCount");
+const listaCarrito = document.getElementById("listaCarrito");
+const totalCarrito = document.getElementById("totalCarrito");
+
+// AGREGAR PRODUCTOS
+document.querySelectorAll("[data-agregar]").forEach(function(boton) {
+
+    boton.addEventListener("click", function() {
+
+        const tarjeta = boton.closest(".producto-item");
+
+        const nombre = tarjeta.querySelector("h3").textContent.trim();
+
+        const cantidad = Number(
+            tarjeta.querySelector(".cantidad-valor").textContent
+        );
+
+        const precio = Number(tarjeta.dataset.precio) || 0;
+
+        const existente = carrito.find(
+            producto => producto.nombre === nombre
+        );
+
+        if (existente) {
+            existente.cantidad += cantidad;
+        } else {
+            carrito.push({
+                nombre: nombre,
+                cantidad: cantidad,
+                precio: precio
+            });
+        }
+
+        actualizarCarrito();
+
+        // MENSAJE DEL MODAL
+        document.getElementById("mensajeProductoAgregado").textContent =
+            `${nombre} se agregó correctamente a tu carrito.`;
+
+        // MOSTRAR MODAL
+        const modal = new bootstrap.Modal(
+            document.getElementById("modalProductoAgregado")
+        );
+
+        modal.show();
+
+        tarjeta.querySelector(".cantidad-valor").textContent = "1";
+
+    });
+
+});
+
+
+// ACTUALIZAR CARRITO
+function actualizarCarrito() {
+
+    const cantidadTotal = carrito.reduce(
+        (total, producto) => total + producto.cantidad, 0
+    );
+
+    contadorCarrito.textContent = cantidadTotal;
+
+    if (carrito.length === 0) {
+        listaCarrito.innerHTML = "<p>Tu carrito está vacío.</p>";
+        totalCarrito.textContent = "Total con precio conocido: $0,00";
+        return;
+    }
+
+    listaCarrito.innerHTML = "";
+
+    let total = 0;
+
+    carrito.forEach(function(producto) {
+
+        total += producto.precio * producto.cantidad;
+
+        const elemento = document.createElement("div");
+
+        elemento.classList.add("producto-carrito");
+
+        elemento.innerHTML = `
+            <p><strong>${producto.nombre}</strong></p>
+            <p>Cantidad: ${producto.cantidad}</p>
+            <p>${producto.precio > 0
+                ? "$" + (producto.precio * producto.cantidad).toLocaleString("es-AR")
+                : "Consultar precio"}
+            </p>
+        `;
+
+        listaCarrito.appendChild(elemento);
+
+    });
+
+    totalCarrito.textContent =
+        "Total con precio conocido: $" +
+        total.toLocaleString("es-AR", {
+            minimumFractionDigits: 2
+        });
+}
+
+
+// BOTÓN VER CARRITO DEL MODAL
+document.getElementById("btnVerCarritoModal")
+    .addEventListener("click", function() {
+
+        const panel = document.getElementById("panelCarrito");
+
+        panel.hidden = false;
+        panel.setAttribute("aria-hidden", "false");
+
+        document.getElementById("abrirCarrito")
+            .setAttribute("aria-expanded", "true");
+
+    });
+
+   
+  </script>
+
+</body>
+</html>

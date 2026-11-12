@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="img/lo1.png">
+
+  <title>Mundo Pintura | Contáctanos</title>
+
+  <!-- Bootstrap 5.3.3 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Iconos Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    rel="stylesheet"
+  >
+
+
+<!-- Tipografía externa Google Fonts: Poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS general -->
+  <link rel="stylesheet" href="style.css">
+
+  
+</head>
+
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-contacto">
+    <div class="container">
+
+      <a class="navbar-brand d-flex align-items-center gap-2"
+         href="index.html">
+        <img src="img/lo1.png" alt="Logo Mundo Pintura">
+        <span>Mundo Pintura</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuPrincipal"
+        aria-controls="menuPrincipal"
+        aria-expanded="false"
+        aria-label="Abrir menú"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav mx-auto align-items-lg-center">
+<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+<li class="nav-item"><a class="nav-link" href="sucursale.html">Sucursales</a></li>
+<li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+<li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
+<li class="nav-item"><a class="nav-link active" href="contactanos.html">Contáctanos</a></li>
+</ul>
+      </div>
+
+    </div>
+  </nav>
+
+
+  
+  <header class="contacto-hero">
+    <div class="container">
+      <div class="contacto-hero-contenido">
+
+        <span class="contacto-etiqueta">
+          ESTAMOS PARA AYUDARTE
+        </span>
+
+        <h1>Contáctanos</h1>
+
+        <p>
+          ¿Tenés alguna consulta sobre pinturas, colores o productos?
+          Estamos para acompañarte en tu próximo proyecto.
+        </p>
+
+        <a href="#formularioContacto" class="btn btn-amarillo">
+          Enviar una consulta
+          <i class="bi bi-arrow-down-circle ms-1"></i>
+        </a>
+
+      </div>
+    </div>
+  </header>
+
+
+  <!-- INFORMACIÓN DE CONTACTO -->
+  <main>
+
+    <section class="contacto-info">
+      <div class="container">
+
+        <div class="text-center titulo-contacto">
+          <span>HABLEMOS</span>
+          <h2>¿Cómo podemos ayudarte?</h2>
+          <p>
+            Elegí una opción o completá el formulario para contarnos
+            qué necesitás.
+          </p>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- PRODUCTOS -->
+          <div class="col-12 col-md-4">
+            <article class="contacto-card">
+              <div class="contacto-icono">
+                <i class="bi bi-palette"></i>
+              </div>
+
+              <h3>Productos y colores</h3>
+
+              <p>
+                Consultá sobre pinturas, tonos, acabados y productos
+                para tu proyecto.
+              </p>
+
+              <a href="catalogo.html">
+                Ver catálogo
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </article>
+          </div>
+
+          <!-- SUCURSALES -->
+          <div class="col-12 col-md-4">
+            <article class="contacto-card">
+              <div class="contacto-icono">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+
+              <h3>Nuestras sucursales</h3>
+
+              <p>
+                Encontrá nuestras ubicaciones para saber dónde
+                podés acercarte.
+              </p>
+
+              <a href="sucursale.html">
+                Ver sucursales
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </article>
+          </div>
+
+          <!-- ATENCIÓN -->
+          <div class="col-12 col-md-4">
+            <article class="contacto-card">
+              <div class="contacto-icono">
+                <i class="bi bi-chat-dots"></i>
+              </div>
+
+              <h3>Atención al cliente</h3>
+
+              <p>
+                ¿Necesitás orientación? Contanos qué estás buscando
+                y prepará tu consulta.
+              </p>
+
+              <a href="#formularioContacto">
+                Hacer una consulta
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+<!-- MODAL CONSULTA ENVIADA -->
+<div class="modal fade" id="modalConsultaEnviada" tabindex="-1"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modal-mundo-pintura">
+
+      <div class="modal-header">
+        <h5 class="modal-title">¡Mensaje enviado!</h5>
+        <button type="button" class="btn-close btn-close-white"
+                data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <div class="icono-exito">
+          <i class="bi bi-check-lg"></i>
+        </div>
+
+        <h4>¡Gracias por contactarnos!</h4>
+
+        <p>
+          Tu consulta fue enviada correctamente.
+          En Mundo Pintura recibimos tu mensaje y nos pondremos
+          en contacto con vos a la brevedad.
+        </p>
+      </div>
+
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-modal-naranja"
+                data-bs-dismiss="modal">
+          ¡Entendido!
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- FORMULARIO -->
+    <section class="contacto-formulario" id="formularioContacto">
+      <div class="container">
+
+        <div class="row align-items-stretch g-0 contacto-panel">
+
+          
+          <div class="col-12 col-lg-5">
+            <div class="contacto-panel-info">
+
+              <span class="contacto-etiqueta">
+                TU PROYECTO NOS IMPORTA
+              </span>
+
+              <h2>Contanos qué necesitás</h2>
+
+              <p>
+                Completá tus datos y escribí tu consulta. Así podremos
+                identificar el motivo de tu mensaje.
+              </p>
+
+              <div class="contacto-beneficio">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Consultas sobre productos y pinturas</span>
+              </div>
+
+              <div class="contacto-beneficio">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Orientación para elegir colores</span>
+              </div>
+
+              <div class="contacto-beneficio">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Información sobre nuestras sucursales</span>
+              </div>
+
+              <div class="contacto-decoracion">
+                <i class="bi bi-brush"></i>
+              </div>
+
+            </div>
+          </div>
+
+         
+          <div class="col-12 col-lg-7">
+            <div class="contacto-panel-form">
+
+              <h2>Enviá tu consulta</h2>
+              <p class="texto-formulario">
+                Los campos marcados con * son obligatorios.
+              </p>
+
+              <form id="formContacto">
+
+                <div class="row g-3">
+
+                  <div class="col-12 col-md-6">
+                    <label for="nombre" class="form-label">
+                      Nombre y apellido *
+                    </label>
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombre"
+                      name="nombre"
+                      placeholder="Tu nombre"
+                      autocomplete="name"
+                      required
+                    >
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <label for="email" class="form-label">
+                      Correo electrónico *
+                    </label>
+
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="tunombre@correo.com"
+                      autocomplete="email"
+                      required
+                    >
+                  </div>
+
+                  <div class="col-12">
+                    <label for="motivo" class="form-label">
+                      Motivo de la consulta *
+                    </label>
+
+                    <select
+                      class="form-select"
+                      id="motivo"
+                      name="motivo"
+                      required
+                    >
+                      <option value="" selected disabled>
+                        Seleccioná una opción
+                      </option>
+                      <option value="Productos y precios">
+                        Productos y precios
+                      </option>
+                      <option value="Colores y asesoramiento">
+                        Colores y asesoramiento
+                      </option>
+                      <option value="Disponibilidad">
+                        Disponibilidad de productos
+                      </option>
+                      <option value="Sucursales">
+                        Sucursales
+                      </option>
+                      <option value="Otro">
+                        Otro motivo
+                      </option>
+                    </select>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="mensaje" class="form-label">
+                      Tu mensaje *
+                    </label>
+
+                    <textarea
+                      class="form-control"
+                      id="mensaje"
+                      name="mensaje"
+                      rows="5"
+                      placeholder="Escribí tu consulta..."
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      class="btn btn-bordo w-100"
+                    >
+                      Enviar
+                      <i class="bi bi-send ms-1"></i>
+                    </button>
+                  </div>
+
+                  <div class="col-12">
+                    <p
+                      id="mensajeFormulario"
+                      class="mensaje-formulario"
+                      role="status"
+                      aria-live="polite"
+                    ></p>
+                  </div>
+
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+ <!-- PIE DE PÁGINA -->
+  <footer class="catalogo-footer">
+    <div class="container">
+      <div class="row align-items-center gy-2">
+
+        <div class="col-md-4 text-center text-md-start">
+          <a href="index.html">
+            <img src="img/lo1.png"
+                 alt="Mundo Pintura"
+                 class="footer-logo">
+          </a>
+
+          
+        </div>
+
+        <div class="col-md-4 text-center">
+          
+          <a href="index.html">Inicio</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="clientes.html">Clientes</a>
+          <a href="sucursale.html">Sucursales</a>
+        </div>
+
+        <div class="col-md-3 text-center text-md-end">
+         
+          <div class="footer-redes">
+            <a href="https://wa.me/5492646607905"
+               target="_blank" rel="noopener" aria-label="WhatsApp">
+             <i class="bi bi-whatsapp"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+             <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+
+          <a href="index.html" class="volver-inicio">
+            <i class="bi bi-house-door-fill" aria-hidden="true"></i>
+
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-final">
+        <p>© Mundo Pintura. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- WHATSAPP -->
+  <a
+    class="whatsapp-catalogo"
+   href="https://wa.me/5492646607905"
+    target="_blank"
+    rel="noopener"
+    aria-label="Consultar por WhatsApp"
+  >
+   <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript de contacto -->
+  <script src="script.js"></script>
+
+</body>
+</html>

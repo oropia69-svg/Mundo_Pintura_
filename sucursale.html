@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="img/lo1.png">
+
+  <title>Mundo Pintura | Sucursales</title>
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Bootstrap Icons -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    rel="stylesheet"
+  >
+
+<!-- Tipografía externa Google Fonts: Poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+  <!-- CSS general -->
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  
+  <header class="site-header">
+   <nav class="navbar navbar-expand-lg navbar-contacto">
+    <div class="container">
+
+      <a class="navbar-brand d-flex align-items-center gap-2"
+         href="index.html">
+        <img src="img/lo1.png" alt="Logo Mundo Pintura">
+        <span>Mundo Pintura</span>
+      </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal"
+          aria-expanded="false"
+          aria-label="Abrir menú"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav mx-auto align-items-lg-center">
+<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+<li class="nav-item"><a class="nav-link active" href="sucursale.html">Sucursales</a></li>
+<li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+<li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
+<li class="nav-item"><a class="nav-link" href="contactanos.html">Contáctanos</a></li>
+</ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+   
+    <!-- BANNER CON MAPA -->
+<section class="sucursales-portada">
+
+  <iframe
+    class="mapa-banner"
+    src="https://maps.google.com/maps?q=San%20Juan%2C%20Argentina&output=embed"
+    title="Mapa de sucursales de Mundo Pintura"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen
+  ></iframe>
+
+  <div class="sucursales-portada-contenido">
+    <h1>Nuestras sucursales</h1>
+    <p>Encontrá tu Mundo Pintura más cercano.</p>
+
+    <a class="btn btn-bordo" href="#listaSucursales">
+      <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+      Ver sucursales
+    </a>
+  </div>
+
+</section>
+
+
+    
+    <section class="container sucursales-seccion" id="listaSucursales">
+
+      <div class="text-center mb-4">
+        <h2>Nuestros locales</h2>
+        <p>Consultá las direcciones, los teléfonos y los horarios.</p>
+      </div>
+
+      
+      <div class="buscador-sucursales">
+        <i class="bi bi-search" aria-hidden="true"></i>
+
+        <input
+          type="search"
+          id="buscarSucursal"
+          placeholder="Buscar por localidad o dirección..."
+          aria-label="Buscar sucursal"
+        >
+      </div>
+
+      <!-- TARJETAS -->
+      <div class="row g-4" id="tarjetasSucursales">
+
+        <!-- 1 -->
+        <div
+          class="col-12 col-md-6 branch-item"
+          data-sucursal="san martin av san martin san juan"
+        >
+          <article class="branch-card">
+
+            <img
+              src="./img/s1.img.jpeg"
+              alt="Sucursal de Mundo Pintura en San Martín"
+              class="branch-img"
+            >
+
+            <div class="branch-info">
+              <h3>Sucursal San Martín</h3>
+
+              <p>
+                <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                <span>Av. San Martín 1234, San Juan, Argentina</span>
+              </p>
+
+              <p>
+                <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                <span>+54 9 264 660 7905</span>
+              </p>
+
+              <p>
+                <i class="bi bi-clock-fill" aria-hidden="true"></i>
+                <span>Lunes a viernes: 8:30–12:30 y 16:00–20:00. Sábados: 8:30–13:00.</span>
+              </p>
+
+              <a
+                class="btn btn-bordo btn-mapa"
+                href="https://www.google.com/maps/search/?api=1&query=Av.+San+Martin+1234+San+Juan+Argentina"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+               
+                Ver en Google Maps
+              </a>
+            </div>
+
+          </article>
+        </div>
+
+        <!-- 2-->
+        <div
+          class="col-12 col-md-6 branch-item"
+          data-sucursal="rawson av espana san juan"
+        >
+          <article class="branch-card">
+
+            <img
+              src="./img/s2.img.jpeg"
+              alt="Sucursal de Mundo Pintura en Rawson"
+              class="branch-img"
+            >
+
+            <div class="branch-info">
+              <h3>Sucursal Rawson</h3>
+
+              <p>
+                <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                <span>Av. España 567, Rawson, San Juan, Argentina</span>
+              </p>
+
+              <p>
+                <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                <span>+54 9 264 679 8057</span>
+              </p>
+
+              <p>
+                <i class="bi bi-clock-fill" aria-hidden="true"></i>
+                <span>Lunes a viernes: 8:30–12:30 y 16:00–20:00. Sábados: 8:30–13:00.</span>
+              </p>
+
+              <a
+                class="btn btn-bordo btn-mapa"
+                href="https://www.google.com/maps/search/?api=1&query=Av.+Espana+567+Rawson+San+Juan+Argentina"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+               
+                Ver en Google Maps
+              </a>
+            </div>
+
+          </article>
+        </div>
+
+        <!-- 3 -->
+        <div
+          class="col-12 col-md-6 branch-item"
+          data-sucursal="capital av libertador san juan"
+        >
+          <article class="branch-card">
+
+            <img
+              src="./img/s3.img.jpeg"
+              alt="Sucursal de Mundo Pintura en Capital"
+              class="branch-img"
+            >
+
+            <div class="branch-info">
+              <h3>Sucursal Capital</h3>
+
+              <p>
+                <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                <span>Av. Libertador 250, Capital, San Juan, Argentina</span>
+              </p>
+
+              <p>
+                <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                <span>+54 9 264 309 982</span>
+              </p>
+
+              <p>
+                <i class="bi bi-clock-fill" aria-hidden="true"></i>
+                <span>Lunes a viernes: 8:30–12:30 y 16:00–20:00. Sábados: 8:30–13:00.</span>
+              </p>
+
+              <a
+                class="btn btn-bordo btn-mapa"
+                href="https://www.google.com/maps/search/?api=1&query=Av.+Libertador+250+Capital+San+Juan+Argentina"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+               
+                Ver en Google Maps
+              </a>
+            </div>
+
+          </article>
+        </div>
+
+        <!-- 4-->
+        <div
+          class="col-12 col-md-6 branch-item"
+          data-sucursal="rivadavia san juan"
+        >
+          <article class="branch-card">
+
+            <img
+              src="./img/s4.img.jpeg"
+              alt="Sucursal de Mundo Pintura en Rivadavia"
+              class="branch-img"
+            >
+
+            <div class="branch-info">
+              <h3>Sucursal Rivadavia</h3>
+
+              <p>
+                <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                <span>Rivadavia, San Juan, Argentina</span>
+              </p>
+
+              <p>
+                <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                <span>+54 9 264 201 4533</span>
+              </p>
+
+              <p>
+                <i class="bi bi-clock-fill" aria-hidden="true"></i>
+                <span>Lunes a viernes: 8:30–12:30 y 16:00–20:00. Sábados: 8:30–13:00.</span>
+              </p>
+
+              <a
+                class="btn btn-bordo btn-mapa"
+                href="https://www.google.com/maps/search/?api=1&query=Rivadavia+San+Juan+Argentina"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+               
+                Ver en Google Maps
+              </a>
+            </div>
+
+          </article>
+        </div>
+
+      </div>
+
+      <p id="sinResultados" class="sin-resultados" hidden>
+        No se encontraron sucursales con esa búsqueda.
+      </p>
+
+    </section>
+
+
+
+
+    <!-- CONTACTO -->
+    <section class="contacto-sucursales">
+      <div class="container">
+
+        <div class="text-center mb-4">
+          <h2>¿Tenés alguna consulta?</h2>
+          <p>Completá el formulario y dejanos tu mensaje.</p>
+        </div>
+
+        <form id="formContacto" class="formulario-sucursales">
+
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              name="nombre"
+              required
+            >
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+            >
+          </div>
+
+          <div class="mb-3">
+            <label for="asunto" class="form-label">Asunto</label>
+            <input
+              type="text"
+              class="form-control"
+              id="asunto"
+              name="asunto"
+              required
+            >
+          </div>
+
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea
+              class="form-control"
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-bordo">
+            <i class="bi bi-send-fill" aria-hidden="true"></i>
+            Enviar
+          </button>
+
+          <p id="mensajeContacto" class="mensaje-contacto" role="status"></p>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+
+
+
+
+<!-- PIE DE PÁGINA -->
+  <footer class="catalogo-footer">
+    <div class="container">
+      <div class="row align-items-center gy-2">
+
+        <div class="col-md-4 text-center text-md-start">
+          <a href="index.html">
+            <img src="img/lo1.png"
+                 alt="Mundo Pintura"
+                 class="footer-logo">
+          </a>
+
+          
+        </div>
+
+        <div class="col-md-4 text-center">
+          
+          <a href="index.html">Inicio</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="clientes.html">Clientes</a>
+          <a href="contactanos.html">Contacto</a>
+        </div>
+
+        <div class="col-md-3 text-center text-md-end">
+         
+          <div class="footer-redes">
+            <a href="https://wa.me/5492646607905"
+               target="_blank" rel="noopener" aria-label="WhatsApp">
+             <i class="bi bi-whatsapp"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+             <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+
+          <a href="index.html" class="volver-inicio">
+            <i class="bi bi-house-door-fill" aria-hidden="true"></i>
+
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-final">
+        <p>© Mundo Pintura. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- WHATSAPP -->
+  <a
+    class="whatsapp-catalogo"
+    href="https://wa.me/5492646607905"
+    target="_blank"
+    rel="noopener"
+    aria-label="Consultar por WhatsApp"
+  >
+   <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript de sucursales -->
+  <script src="script.js"></script>
+
+</body>
+</html>
